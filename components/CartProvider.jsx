@@ -8,8 +8,8 @@ const CartProvider = ({ children }) => {
       mode="payment"
       cartMode="client-only"
       stripe={process.env.NEXT_PUBLIC_STRIPE_KEY}
-      successUrl="http://steamyshuffle.vercel.app/stripe/success"
-      cancelUrl="http://steamyshuffle.vercel.app/stripe/error"
+      successUrl="http://www.steamyshuffle.ca/stripe/success"
+      cancelUrl="http://www.steamyshuffle.ca/stripe/error"
       language="en-US"
       currency="CAD"
       billingAddressCollection={true}
