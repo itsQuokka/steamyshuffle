@@ -18,7 +18,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.8 }}
-              className="text-center xl:text-left mb-6"
+              className="text-center mx-auto xl:text-left mb-6"
             >
               Where <span className="text-accent">Seduction</span> Begins
             </motion.h1>
