@@ -20,7 +20,7 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.8 }}
               className="text-center mx-auto xl:text-left mb-6"
             >
-              Where <span className="text-accent">Pleasure</span> Awaits
+              WHERE <span className="text-accent">RELATIONSHIPS</span> REFRESH
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.2)}
@@ -29,13 +29,12 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="mb-10 text-lg max-w-[508px] mx-auto text-center xl:text-left xl:mx-0"
             >
-              From sensual massages to daring role-playing scenarios, the
-              challenges found in "Steamy Shuffle" are crafted to inspire
-              laughter, affection, and yes, even a few blushes. But amidst the
-              playful banter and steamy exchanges, there's an underlying message
-              of love and connection, reminding couples of the power of intimacy
-              to strengthen their bond and reignite the spark in their
-              relationship.
+              Each deck offers a unique journey, whether you're delving into
+              steamy encounters that raise the temperature or engaging in
+              profound discussions that deepen your connection. It's a game
+              where intimacy knows no bounds, where you can explore the heights
+              of desire and the depths of emotion, all while refreshing your
+              body and mind together with your partner.
             </motion.p>
             {/* Button Group */}
             <motion.h5
