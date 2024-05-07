@@ -84,10 +84,7 @@ const ProductDetails = async ({ params }) => {
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <EyeOff size={25} className="text-accent" />
                 <h3 className="text-lg">Discreet</h3>
-                <p>
-                  Your privacy matters, so we will ship your package in plain,
-                  discreet packaging.
-                </p>
+                <p>We will ship your package in plain, discreet packaging.</p>
               </div>
 
               <div className="flex gap-2 flex-col md:flex-row items-center">
@@ -99,9 +96,8 @@ const ProductDetails = async ({ params }) => {
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <BadgeCheck size={25} className="text-accent" />
                 <h3 className="text-lg">Fun Fact</h3>
-                <p className="">
-                  Did you know Steamy Shuffle is an independent business? Ran by
-                  one person alone!
+                <p className="text-center md:text-left">
+                  Did you know Steamy Shuffle is an independent business?
                 </p>
               </div>
             </div>

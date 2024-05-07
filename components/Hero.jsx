@@ -43,7 +43,7 @@ const Hero = () => {
               initial="hidden"
               whileInView={"show"}
               viewport={{ once: false, amount: 0.8 }}
-              className="text-center xl:text-left mb-6"
+              className="mx-auto text-center xl:text-left xl:mx-0 mb-6"
             >
               An <span className="text-accent">Independent</span> Business
             </motion.h5>
