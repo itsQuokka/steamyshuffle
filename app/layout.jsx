@@ -38,7 +38,7 @@ export default function RootLayout({ children }) {
         <title>Steamy Shuffle</title>
         <script
           async
-          src="https://www.googletagmanager.com/gtag/js?id=YOUR_TRACKING_ID"
+          src="https://www.googletagmanager.com/gtag/js?id=G-XZ495Z9CZK"
         />
         <script>{injectGA()}</script>
       </head>
