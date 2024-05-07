@@ -17,42 +17,42 @@ const testimonialData = [
   {
     name: "Noah W",
     message:
-      "We were skeptical at first, but Sweaty Shuffle exceeded all our expectations! The challenges were just the right amount of naughty, and we couldn't believe how quickly things escalated. Let's just say, the room wasn't the only thing steaming up!",
+      "We were skeptical at first, but Steamy Shuffle exceeded all our expectations! The challenges were just the right amount of naughty, and we couldn't believe how quickly things escalated. Let's just say, the room wasn't the only thing steaming up!",
   },
   {
     name: "Ava B",
     message:
-      "I've never seen my partner blush so much! Sweaty Shuffle brought out a side of us we never knew existed. We'll be playing this game again and again. It's like foreplay on steroids!",
+      "I've never seen my partner blush so much! Steamy Shuffle brought out a side of us we never knew existed. We'll be playing this game again and again. It's like foreplay on steroids!",
   },
   {
     name: "Liam S",
     message:
-      "Sweaty Shuffle is a game-changer for couples looking to reignite the passion in their relationship. The challenges were creative, the atmosphere was electric, things got pretty hot and heavy!",
+      "Steamy Shuffle is a game-changer for couples looking to reignite the passion in their relationship. The challenges were creative, the atmosphere was electric, things got pretty hot and heavy!",
   },
   {
     name: "Emma R",
     message:
-      "Who knew a card game could be so hot? Sweaty Shuffle had us laughing, blushing, and exploring each other in ways we never imagined. Our love life has never been better!",
+      "Who knew a card game could be so hot? Steamy Shuffle had us laughing, blushing, and exploring each other in ways we never imagined. Our love life has never been better!",
   },
   {
     name: "Isabella K",
     message:
-      "If you're looking to turn up the heat in your relationship, look no further than Sweaty Shuffle. This game took our intimacy to new heights, and we couldn't believe how quickly things got steamy. 10/10 recommend!",
+      "If you're looking to turn up the heat in your relationship, look no further than Steamy Shuffle. This game took our intimacy to new heights, and we couldn't believe how quickly things got steamy. 10/10 recommend!",
   },
   {
     name: "Ethan C",
     message:
-      "My partner and I were looking for something to spice up our nights, and Sweaty Shuffle delivered! From playful massages to steamy dares, this game had us both feeling hot and bothered—in the best way possible!",
+      "My partner and I were looking for something to spice up our nights, and Steamy Shuffle delivered! From playful massages to steamy dares, this game had us both feeling hot and bothered—in the best way possible!",
   },
   {
     name: "Olivia H",
     message:
-      "This game is pure magic! Sweaty Shuffle had us laughing, flirting, and exploring our deepest desires. We couldn't believe how quickly the tension built, and let's just say, we didn't need any help heating up the room!",
+      "This game is pure magic! Steamy Shuffle had us laughing, flirting, and exploring our deepest desires. We couldn't believe how quickly the tension built, and let's just say, we didn't need any help heating up the room!",
   },
   {
     name: "Sophia L",
     message:
-      "I never thought a card game could be so sexy! Sweaty Shuffle had us feeling like a couple of teenagers again, sneaking kisses and stealing glances. I get why they call it 'Steamy' Shuffle cause damn was it ever after a couple cards.",
+      "I never thought a card game could be so sexy! Steamy Shuffle had us feeling like a couple of teenagers again, sneaking kisses and stealing glances. I get why they call it 'Steamy' Shuffle cause damn was it ever after a couple cards.",
   },
 ];
 
@@ -78,7 +78,7 @@ const TestimonialSlider = () => {
           return (
             <SwiperSlide key={index}>
               <div className="flex flex-col justify-center items-center text-center">
-                <FaQuoteLeft className="text-7xl text-accent mb-6" />
+                <FaQuoteLeft className="text-4xl text-accent mb-6" />
                 <div className="text-2xl xl:text-4xl max-w-[874px] mb-6 font-medium">
                   {message}
                 </div>

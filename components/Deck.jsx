@@ -14,7 +14,7 @@ const Deck = ({ deck }) => {
   );
   return (
     <div className="group">
-      <div className="border h-[328px] group-hover:-translate-y-2  mb-5 p-4 overflow-hidden relative">
+      <div className="border h-[328px] mb-5 p-4 overflow-hidden relative">
         <div className="bg-[#FFFFFF] w-full h-full transition-all duration-300 flex justify-center items-center">
           {/* Bade */}
           {popularDeckCat && (
@@ -52,8 +52,11 @@ const Deck = ({ deck }) => {
         {deck.categories[0].name}
       </h5>
       <h5 className="mb-1">{deck.name}</h5>
-      <div className="text-lg font-bold text-accent">
-        ${Math.round(deck.price * 100) / 100} CAD
+      <div className="text-lg font-bold text-accent items-center">
+        <span className="text-primary line-through">
+          ${Math.round((deck.price * 100) / 100) + 20}
+        </span>
+        {"   "}${Math.round(deck.price * 100) / 100} CAD
       </div>
     </div>
   );

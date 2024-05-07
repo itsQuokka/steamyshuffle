@@ -8,7 +8,9 @@ import { fadeIn } from "@/variants";
 import { useInView } from "react-intersection-observer";
 import CountUp from "react-countup";
 
-import { MdEmojiPeople, MdEco, MdOutlineSportsKabaddi } from "react-icons/md";
+import { MdEmojiPeople, MdEco } from "react-icons/md";
+
+import { Gauge, Clock10 } from "lucide-react";
 
 const Why = () => {
   const [ref, inView] = useInView({
@@ -22,21 +24,21 @@ const Why = () => {
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.2 }}
-          className="h2 text-center"
+          className="h2 text-center mb-2 xl:mb-4"
         >
-          Unmatched excellence and customer catisfaction
+          Building <span className="text-accent">Relationships</span> one Card
+          at a Time
         </motion.h2>
-        <motion.p
+        <motion.h5
           variants={fadeIn("up", 0.4)}
           initial="hidden"
           whileInView={"show"}
           viewport={{ once: false, amount: 0.6 }}
-          className="max-w-[680px] text-center mx-auto mb-2"
+          className="max-w-[680px] text-center mx-auto mb-2 text-primary/50"
         >
-          Our dedication to providing exceptional services sets us apart from
-          the ceptition. From the moment you engage with us, we strive to exceed
-          your expectations in every interaction.
-        </motion.p>
+          A simple deck of cards can do wonders for building relationships when
+          you involve nudity.
+        </motion.h5>
 
         {/* Image */}
         {/* <motion.div
@@ -51,15 +53,15 @@ const Why = () => {
 
         {/* Grid Items */}
 
-        <motion.div
-          variants={fadeIn("up", 0.8)}
-          initial="hidden"
-          whileInView={"show"}
-          viewport={{ once: false, amount: 0.4 }}
-          className="flex flex-wrap justify-center xl:grid xl:grid-cols-3 gap-4 xl:gap-y-0 xl:gap-x-[30px]"
-        >
-          <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
-            <MdEco className="text-[38px] text-accent mb-4" />
+        <div className="flex flex-wrap justify-center mt-20 xl:grid xl:grid-cols-3 gap-4 xl:gap-y-0 xl:gap-x-[30px]">
+          <motion.div
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.4 }}
+            className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0"
+          >
+            <Clock10 size={44} className=" text-accent mb-4" />
             <h3 className="h3">Eco-Friendly</h3>
             <div className="text-3xl font-black mb-2">
               {inView ? (
@@ -72,42 +74,57 @@ const Why = () => {
               we have a more sustainable card stock made from grass and the
               leafy parts of plants called the E27 Eco-herbage stock. This stock
               has a more raw and natural color to it with visible fibers.
+              <br /> Let us know after you purchase!
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
-            <MdEmojiPeople className="text-[38px] text-accent mb-4" />
-            <h3 className="h3">Happy People</h3>
+          <motion.div
+            variants={fadeIn("up", 0.4)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.6 }}
+            className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0"
+          >
+            <MdEmojiPeople size={44} className=" text-accent mb-4" />
+            <h3 className="h3">Total Buyers</h3>
             <div className="text-3xl font-black mb-2">
               {inView ? (
-                <CountUp start={294} end={341} duration={3} delay={1} />
+                <CountUp start={3103} end={3195} duration={3} delay={1} />
               ) : null}
               +
             </div>
             <p className="hidden xl:flex">
-              Get ready to laugh, blush, and bond with our game! Designed to
-              bring joy and laughter to couples, creating unforgettable memories
-              of happiness and love.
+              Get ready to laugh, blush, and bond with our game! <br />
+              Designed to bring joy and laughter to couples, creating
+              unforgettable memories of intimacy, happiness and love. As a new
+              business, we are so excited to see how many people love our game!
             </p>
-          </div>
+          </motion.div>
 
-          <div className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0">
-            <MdOutlineSportsKabaddi className="text-[38px] text-accent mb-4" />
-            <h3 className="h3">Horny Couples</h3>
+          <motion.div
+            variants={fadeIn("up", 0.6)}
+            initial="hidden"
+            whileInView={"show"}
+            viewport={{ once: false, amount: 0.6 }}
+            className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0"
+          >
+            <Gauge size={44} className=" text-accent mb-4" />
+            <h3 className="h3">Sex Drive</h3>
             <div className="text-3xl font-black mb-2">
               {inView ? (
-                <CountUp start={49} end={100} duration={3} delay={1} />
+                <CountUp start={78} end={100} duration={3} delay={1} />
               ) : null}
               %
             </div>
             <p className="hidden xl:flex">
-              Heat things up in the bedroom with our steamy game for adventurous
-              couples! Our games are the perfect way to explore fantasies,
-              deepen intimacy, and keep the passion alive, leading to an
-              increase in relationship satisfaction.
+              Our games are designed to spark the flame in your relationship.
+              Between the challenges, activities and questions, Steamy Shuffle
+              will lead you to the bedroom faster than you can open the package.
+              <br />
+              Can you last past 15 cards?
             </p>
-          </div>
-        </motion.div>
+          </motion.div>
+        </div>
       </div>
     </section>
   );

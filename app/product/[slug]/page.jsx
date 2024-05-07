@@ -9,6 +9,7 @@ import {
   PackageCheck,
   RefreshCw,
   ChevronLeft,
+  EyeOff,
 } from "lucide-react";
 
 const getData = async (slug) => {
@@ -28,6 +29,7 @@ const getData = async (slug) => {
 
 const ProductDetails = async ({ params }) => {
   const deck = await getData(params.slug);
+
   return (
     <section className="pt-24 pb-32">
       <div className="container mx-auto">
@@ -54,7 +56,9 @@ const ProductDetails = async ({ params }) => {
             <div className="flex flex-col gap-6 items-start">
               <div>
                 <h3>{deck.name}</h3>
-                <p className="text-lg font-semibold">${deck.price} CAD</p>
+                <p className="text-lg text-accent font-semibold">
+                  ${deck.price} CAD
+                </p>
               </div>
               <p>{deck.description}</p>
               <AddToCartBtn
@@ -69,27 +73,35 @@ const ProductDetails = async ({ params }) => {
               />
             </div>
             {/* INFO */}
-            <div className="flex flex-col gap-3">
-              <div className="flex gap-2">
-                <Clock size={20} className="text-accent" />
-                <p>Fast Delivery.</p>
+
+            <div className="flex flex-col gap-3 mx-auto md:mx-0 items-left">
+              <div className="flex gap-2 flex-col md:flex-row items-center">
+                <Clock size={25} className="text-accent" />
+                <h3 className="text-lg">Fast Delivery</h3>
+                <p>Your package will be shipped the same day!</p>
               </div>
 
-              <div className="flex gap-2">
-                <PackageCheck size={20} className="text-accent" />
-                <p>Free shipping on orders over $75.</p>
-              </div>
-
-              <div className="flex gap-2">
-                <RefreshCw size={20} className="text-accent" />
-                <p>Returnable for 14 days unopened from original packaging.</p>
-              </div>
-
-              <div className="flex gap-2">
-                <BadgeCheck size={20} className="text-accent" />
+              <div className="flex gap-2 flex-col md:flex-row items-center">
+                <EyeOff size={25} className="text-accent" />
+                <h3 className="text-lg">Discreet</h3>
                 <p>
-                  Guaranteed to add some excitement to your night, be sure to
-                  grab your drinks!
+                  Your privacy matters, so we will ship your package in plain,
+                  discreet packaging.
+                </p>
+              </div>
+
+              <div className="flex gap-2 flex-col md:flex-row items-center">
+                <PackageCheck size={25} className="text-accent" />
+                <h3 className="text-lg">Returns</h3>
+                <p>Free returns for Canadian and US shoppers!</p>
+              </div>
+
+              <div className="flex gap-2 flex-col md:flex-row items-center">
+                <BadgeCheck size={25} className="text-accent" />
+                <h3 className="text-lg">Fun Fact</h3>
+                <p className="">
+                  Did you know Steamy Shuffle is an independent business? Ran by
+                  one person alone!
                 </p>
               </div>
             </div>

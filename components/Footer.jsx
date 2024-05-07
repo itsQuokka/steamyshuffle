@@ -16,14 +16,14 @@ const Footer = () => {
             </p>
           </div>
           {/* Form */}
-          <form className="flex flex-col xl:flex-row w-full max-w-[720px] mx-auto gap-5">
+          <form className="flex flex-col xl:flex-row items-center w-full max-w-[720px] mx-auto gap-5">
             <Input placeholder="Your Email Address" />
-            <button className="btn w-full xl:max-w-[150px] h[60px] btn-accent">
+            <button className="btn w-full xl:max-w-[150px] h-[60px] btn-accent">
               Join
             </button>
           </form>
           <div className="flex gap-8 mx-auto text-[20px] text-white/60 mb-20">
-            <Link href="">
+            <Link href="http://www.instagram.com/steamyshuffleca">
               <RiInstagramFill />
             </Link>
             <Link href="">

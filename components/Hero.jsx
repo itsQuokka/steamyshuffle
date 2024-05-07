@@ -20,7 +20,7 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.8 }}
               className="text-center mx-auto xl:text-left mb-6"
             >
-              Where <span className="text-accent">Seduction</span> Begins
+              Where <span className="text-accent">Pleasure</span> Awaits
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.2)}
@@ -30,7 +30,7 @@ const Hero = () => {
               className="mb-10 text-lg max-w-[508px] mx-auto text-center xl:text-left xl:mx-0"
             >
               From sensual massages to daring role-playing scenarios, the
-              challenges found in "Sweaty Shuffle" are crafted to inspire
+              challenges found in "Steamy Shuffle" are crafted to inspire
               laughter, affection, and yes, even a few blushes. But amidst the
               playful banter and steamy exchanges, there's an underlying message
               of love and connection, reminding couples of the power of intimacy
@@ -38,6 +38,15 @@ const Hero = () => {
               relationship.
             </motion.p>
             {/* Button Group */}
+            <motion.h5
+              variants={fadeIn("down", 0.6)}
+              initial="hidden"
+              whileInView={"show"}
+              viewport={{ once: false, amount: 0.8 }}
+              className="text-center xl:text-left mb-6"
+            >
+              An <span className="text-accent">Independent</span> Business
+            </motion.h5>
             <motion.div
               variants={fadeIn("down", 0.4)}
               initial="hidden"
@@ -56,10 +65,10 @@ const Hero = () => {
 
           {/* Image */}
           <motion.div
-            variants={fadeIn("left", 0.4)}
+            variants={fadeIn("up", 0.4)}
             initial="hidden"
             whileInView={"show"}
-            viewport={{ once: false, amount: 0.6 }}
+            viewport={{ once: false, amount: 0.8 }}
             className="hidden xl:flex"
           >
             <Image
