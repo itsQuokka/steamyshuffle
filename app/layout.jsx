@@ -28,7 +28,7 @@ const injectGA = () => {
   }
   gtag("js", new Date());
 
-  gtag("config", "YOUR_TRACKING_ID");
+  gtag("config", "G-XZ495Z9CZK");
 };
 
 export default function RootLayout({ children }) {
