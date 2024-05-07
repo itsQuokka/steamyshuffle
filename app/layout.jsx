@@ -28,16 +28,6 @@ export default function RootLayout({ children }) {
           <Footer />
         </CartProvider>
       </body>
-
-      <script
-        async
-        src="https://www.googletagmanager.com/gtag/js?id=G-XZ495Z9CZK"
-      ></script>
-      <script>
-        window.dataLayer = window.dataLayer || []; function gtag()
-        {dataLayer.push(arguments)}
-        gtag('js', new Date()); gtag('config', 'G-XZ495Z9CZK');
-      </script>
     </html>
   );
 }
