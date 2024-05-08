@@ -17,7 +17,7 @@ const Hero = () => {
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.8 }}
+              viewport={{ once: false, amount: 0.2 }}
               className="text-center mx-auto xl:text-left mb-6"
             >
               WHERE <span className="text-accent">CONNECTIONS</span> DEEPEN

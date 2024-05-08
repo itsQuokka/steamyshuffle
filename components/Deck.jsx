@@ -12,6 +12,10 @@ const Deck = ({ deck }) => {
   const popularDeckCat = deck.categories.find(
     (deck) => deck.name === "Popular"
   );
+
+  const friendsDeckCat = deck.categories.find(
+    (deck) => deck.name === "Friends"
+  );
   return (
     <div className="group">
       <div className="border h-[328px] mb-5 p-4 overflow-hidden relative">
@@ -20,6 +24,12 @@ const Deck = ({ deck }) => {
           {popularDeckCat && (
             <div className="absolute top-8 left-8 bg-accent text-white px-3 text-sm uppercase font-medium">
               Popular
+            </div>
+          )}
+
+          {friendsDeckCat && (
+            <div className="absolute top-8 left-8 bg-accent text-white px-3 text-sm uppercase font-medium">
+              Friends
             </div>
           )}
 
