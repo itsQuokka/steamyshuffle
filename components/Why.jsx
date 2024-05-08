@@ -26,8 +26,8 @@ const Why = () => {
           viewport={{ once: false, amount: 0.2 }}
           className="h2 text-center mb-2 xl:mb-4"
         >
-          Building <span className="text-accent">Relationships</span> one Card
-          at a Time
+          FROM <span className="text-accent">SHOTS</span> TO THE{" "}
+          <span className="text-accent">SHEETS</span>
         </motion.h2>
         <motion.h5
           variants={fadeIn("up", 0.4)}
@@ -36,8 +36,9 @@ const Why = () => {
           viewport={{ once: false, amount: 0.6 }}
           className="max-w-[680px] text-center mx-auto mb-2 text-primary/50"
         >
-          A simple deck of cards can do wonders for building relationships when
-          you involve nudity.
+          A simple deck of cards can do wonders for building relationships{" "}
+          <br className="flex xl:hidden" />
+          when you involve nudity and drinks.
         </motion.h5>
 
         {/* Image */}

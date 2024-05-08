@@ -20,7 +20,7 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.8 }}
               className="text-center mx-auto xl:text-left mb-6"
             >
-              WHERE <span className="text-accent">RELATIONSHIPS</span> REFRESH
+              WHERE <span className="text-accent">CONNECTIONS</span> DEEPEN
             </motion.h1>
             <motion.p
               variants={fadeIn("down", 0.2)}
@@ -29,12 +29,15 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="mb-10 text-lg max-w-[508px] mx-auto text-center xl:text-left xl:mx-0"
             >
-              Each deck offers a unique journey, whether you're delving into
-              steamy encounters that raise the temperature or engaging in
-              profound discussions that deepen your connection. It's a game
-              where intimacy knows no bounds, where you can explore the heights
-              of desire and the depths of emotion, all while refreshing your
-              body and mind together with your partner.
+              Our collection boasts an array of games designed for couples
+              seeking intimate connections and parties craving spirited fun.
+              Whether you're nestled in with your significant other or
+              surrounded by friends, our games promise unforgettable
+              experiences. Dive into steamy challenges that fuel desire or
+              engage in lively competitions that keep the party going. With
+              options for every occasion, our games offer the perfect blend of
+              intimacy and entertainment, ensuring unforgettable moments with
+              your partner or group.
             </motion.p>
             {/* Button Group */}
             <motion.h5

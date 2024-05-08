@@ -34,7 +34,7 @@ const PopularDecks = async () => {
           Most <span className="text-accent">Popular</span> Products
         </h2>
         <p className="text-center mb-[30px]">
-          The World's Premium Brand for Couples Card Games
+          The World's Premium Brand for Drinking Card Games
         </p>
         <PopularDecksCarousel decks={decks} />
         <Link href="/our-decks">

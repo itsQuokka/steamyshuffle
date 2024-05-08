@@ -42,6 +42,15 @@ const DeckCategories = ({ decks }) => {
 
               <div className="flex items-center space-x-2">
                 <RadioGroupItem
+                  value="Friends"
+                  id="Friends"
+                  onClick={() => setCategory("Friends")}
+                />
+                <label htmlFor="Friends">Friends</label>
+              </div>
+
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem
                   value="steamy"
                   id="steamy"
                   onClick={() => setCategory("steamy")}
