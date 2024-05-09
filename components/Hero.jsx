@@ -7,7 +7,7 @@ import { fadeIn } from "@/variants";
 
 const Hero = () => {
   return (
-    <section className="py-48 md:py-0 md:h-[820px] relative overflow-hidden bg-[#FFFFFF]">
+    <section className="py-20 md:py-0 md:h-[820px] relative overflow-hidden bg-[#FFFFFF]">
       <div className="container mx-auto">
         <div className="flex items-center justify-between">
           {/* Text */}
@@ -17,7 +17,7 @@ const Hero = () => {
               variants={fadeIn("down", 0.6)}
               initial="hidden"
               whileInView={"show"}
-              viewport={{ once: false, amount: 0.2 }}
+              viewport={{ once: false, amount: 0.4 }}
               className="text-center mx-auto xl:text-left mb-6"
             >
               WHERE <span className="text-accent">CONNECTIONS</span> DEEPEN
