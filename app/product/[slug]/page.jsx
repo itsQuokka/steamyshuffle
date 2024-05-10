@@ -3,6 +3,8 @@ import Image from "next/image";
 import AddToCartBtn from "@/components/AddToCartBtn";
 import Link from "next/link";
 
+import ImageComponent from "@/components/ImageComponent";
+
 import {
   BadgeCheck,
   Clock,
@@ -31,18 +33,12 @@ const ProductDetails = async ({ params }) => {
   const deck = await getData(params.slug);
 
   return (
-    <section className="pt-24 pb-32">
+    <section className="pt-0 lg:pt-20 pb-32">
       <div className="container mx-auto">
         <div className="flex flex-col xl:flex-row gap-14">
           {/* IMG */}
           <div className="xl:flex-1 h-[460px] bg-[#FFFFFF] xl:w-[700px] xl:h-[540px] flex justify-center items-center">
-            <Image
-              src={urlFor(deck.images[0]).url()}
-              width={473}
-              height={290}
-              priority
-              alt=""
-            />
+            <ImageComponent deck={deck.images} />
           </div>
           {/* Text */}
           <div className="flex-1 flex flex-col justify-center items-start gap-10">

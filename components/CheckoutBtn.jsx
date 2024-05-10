@@ -4,6 +4,7 @@ const CheckoutBtn = () => {
   const handleCheckout = async () => {
     try {
       const res = await redirectToCheckout();
+      console.log(res);
       if (res?.error) {
         console.log(res);
       }
