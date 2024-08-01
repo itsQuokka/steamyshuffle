@@ -33,6 +33,9 @@ const getData = async (slug) => {
 const getKey = (name) => {
   const dict = {
     "Steamy Shuffle - Hot Version": "price_1PinTGJspEGYDPOPXrOYE6Lt",
+    "Steamy Shuffle - Most Likely To": "price_1PinbnJspEGYDPOPlYYI7Iua",
+    "Steamy Shuffle - Let's Get F*cked": "price_1PinbAJspEGYDPOPfQKlrhhv",
+    "Steamy Shuffle - Let's Get Deep": "price_1PinbSJspEGYDPOPLqNV3J4r",
   };
 
   return dict[name];
