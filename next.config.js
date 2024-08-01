@@ -6,6 +6,9 @@ module.exports = {
       {
         hostname: "cdn.sanity.io",
       },
+      {
+        hostname: "www.steamyshuffle.ca",
+      },
     ],
   },
 };

@@ -13,6 +13,7 @@ import {
   ChevronLeft,
   EyeOff,
 } from "lucide-react";
+import TestimonialSlug from "@/components/TestimonialSlug";
 
 const getData = async (slug) => {
   const query = `*[_type == 'product' && slug.current == '${slug}'][0] {
@@ -57,16 +58,28 @@ const ProductDetails = async ({ params }) => {
                 </p>
               </div>
               <p>{deck.description}</p>
-              <AddToCartBtn
-                price_id={deck.price_id}
-                name={deck.name}
-                currency="CAD"
-                description={deck.description}
-                images={deck.images}
-                price={deck.price}
-                text={"Add to Cart"}
-                btnStyles="btn btn-accent"
-              />
+              <div className="flex flex-col gap-3 mx-auto md:mx-0 items-left md:flex-row">
+                <AddToCartBtn
+                  price_id={deck.price_id}
+                  name={deck.name}
+                  currency="CAD"
+                  description={deck.description}
+                  images={deck.images}
+                  price={deck.price}
+                  text={"Add to Cart"}
+                  btnStyles="btn btn-accent"
+                />
+                <AddToCartBtn
+                  price_id={"price_1Pimx7JspEGYDPOP6RIzBEi0"}
+                  name={deck.name + " PDF"}
+                  currency="CAD"
+                  description={deck.description}
+                  images={deck.images}
+                  price={5.99}
+                  text={"Purchase PDF $5.99"}
+                  btnStyles="btn btn-accent"
+                />
+              </div>
             </div>
             {/* INFO */}
 
@@ -99,6 +112,9 @@ const ProductDetails = async ({ params }) => {
             </div>
           </div>
         </div>
+      </div>
+      <div className="mx-auto items-center gap-4">
+        <TestimonialSlug />
       </div>
     </section>
   );
