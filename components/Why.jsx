@@ -62,7 +62,7 @@ const Why = () => {
             <h3 className="h3"># of Decks</h3>
             <div className="text-3xl font-black mb-2">
               {inView ? (
-                <CountUp start={0} end={3} duration={6} delay={1} />
+                <CountUp start={0} end={4} duration={6} delay={1} />
               ) : null}
             </div>
             <p className="hidden xl:flex">
