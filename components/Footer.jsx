@@ -1,3 +1,4 @@
+"use client";
 import Link from "next/link";
 import { Input } from "./ui/input";
 import { RiInstagramFill, RiTiktokFill } from "react-icons/ri";
@@ -35,6 +36,10 @@ const Footer = () => {
       {/* Copyright */}
       <div className="py-6 border-t border-white/5 text-white/60">
         Copyright &copy; 2024 Steamy Shuffle. All rights reserved.
+        <br />
+        <Link href="/terms-conditions" className="hover:text-current">
+          <p>Terms & Conditions</p>
+        </Link>
       </div>
     </footer>
   );

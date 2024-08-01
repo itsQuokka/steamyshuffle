@@ -29,15 +29,16 @@ const Hero = () => {
               viewport={{ once: false, amount: 0.6 }}
               className="mb-10 text-lg max-w-[508px] mx-auto text-center xl:text-left xl:mx-0"
             >
-              Our collection boasts an array of games designed for couples
-              seeking intimate connections and parties craving spirited fun.
-              Whether you're nestled in with your significant other or
+              Our collection boasts an array of games designed for parties
+              craving spirited fun and couples, seeking intimate connections
+              and. Whether you're nestled in with your significant other or
               surrounded by friends, our games promise unforgettable
               experiences. Dive into steamy challenges that fuel desire or
-              engage in lively competitions that keep the party going. With
-              options for every occasion, our games offer the perfect blend of
-              intimacy and entertainment, ensuring unforgettable moments with
-              your partner or group.
+              engage in lively competitions that keep the party going, or reveal
+              the truths of what your friends think of you. With options for
+              every occasion, our games offer the perfect blend of intimacy and
+              entertainment, ensuring unforgettable moments with your partner or
+              group.
             </motion.p>
             {/* Button Group */}
             <motion.h5
