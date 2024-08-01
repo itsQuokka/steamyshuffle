@@ -33,6 +33,8 @@ const getData = async (slug) => {
 const ProductDetails = async ({ params }) => {
   const deck = await getData(params.slug);
 
+  console.log(params.slug);
+
   return (
     <section className="pt-0 lg:pt-20 pb-32">
       <div className="container mx-auto">
