@@ -75,6 +75,15 @@ const DeckCategories = ({ decks }) => {
                 />
                 <label htmlFor="exploration">Exploration</label>
               </div>
+
+              <div className="flex items-center space-x-2">
+                <RadioGroupItem
+                  value="virtual"
+                  id="virtual"
+                  onClick={() => setCategory("virtual")}
+                />
+                <label htmlFor="virtual">Virtual</label>
+              </div>
             </RadioGroup>
 
             {/* Price Slider */}
