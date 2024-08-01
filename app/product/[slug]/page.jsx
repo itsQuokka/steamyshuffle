@@ -30,10 +30,17 @@ const getData = async (slug) => {
   return data;
 };
 
+const getKey = (name) => {
+  const dict = {
+    "Steamy Shuffle - Hot Version": "price_1PinTGJspEGYDPOPXrOYE6Lt",
+  };
+
+  return dict[name];
+};
+
 const ProductDetails = async ({ params }) => {
   const deck = await getData(params.slug);
-
-  console.log(params.slug);
+  const price_id = getKey(deck.name);
 
   return (
     <section className="pt-0 lg:pt-20 pb-32">
@@ -72,7 +79,7 @@ const ProductDetails = async ({ params }) => {
                   btnStyles="btn btn-accent"
                 />
                 <AddToCartBtn
-                  price_id={"price_1PinTGJspEGYDPOPXrOYE6Lt"}
+                  price_id={price_id}
                   name={deck.name + " PDF"}
                   currency="CAD"
                   description={deck.description + " PDF"}
