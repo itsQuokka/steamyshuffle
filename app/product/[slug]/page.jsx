@@ -70,10 +70,10 @@ const ProductDetails = async ({ params }) => {
                   btnStyles="btn btn-accent"
                 />
                 <AddToCartBtn
-                  price_id={"price_1Pimx7JspEGYDPOP6RIzBEi0"}
+                  price_id={"price_1PinTGJspEGYDPOPXrOYE6Lt"}
                   name={deck.name + " PDF"}
                   currency="CAD"
-                  description={deck.description}
+                  description={deck.description + " PDF"}
                   images={deck.images}
                   price={5.99}
                   text={"Purchase PDF $5.99"}
