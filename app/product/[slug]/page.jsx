@@ -12,6 +12,7 @@ import {
   RefreshCw,
   ChevronLeft,
   EyeOff,
+  Smartphone,
 } from "lucide-react";
 import TestimonialSlug from "@/components/TestimonialSlug";
 
@@ -89,7 +90,7 @@ const ProductDetails = async ({ params }) => {
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <Clock size={25} className="text-accent" />
                 <h3 className="text-lg">Fast Delivery</h3>
-                <p>Your PDF will be emailed the same day!</p>
+                <p>No time to waste, your PDF will be delivered on purchase!</p>
               </div>
 
               <div className="flex gap-2 flex-col md:flex-row items-center">
@@ -100,7 +101,13 @@ const ProductDetails = async ({ params }) => {
                   non-refundable.
                 </p>
               </div>
-
+              <div className="flex gap-2 flex-col md:flex-row items-center">
+                <Smartphone size={25} className="text-accent" />
+                <h3 className="text-lg">Convenience</h3>
+                <p className="text-center md:text-left">
+                  Stop getting your cards all mushy - keep it on your phone!
+                </p>
+              </div>
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <BadgeCheck size={25} className="text-accent" />
                 <h3 className="text-lg">Fun Fact</h3>
