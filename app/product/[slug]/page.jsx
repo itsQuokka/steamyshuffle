@@ -78,17 +78,7 @@ const ProductDetails = async ({ params }) => {
                   description={deck.description}
                   images={deck.images}
                   price={deck.price}
-                  text={"Add to Cart"}
-                  btnStyles="btn btn-accent"
-                />
-                <AddToCartBtn
-                  price_id={price_id}
-                  name={deck.name + " PDF"}
-                  currency="CAD"
-                  description={deck.description + " PDF"}
-                  images={deck.images}
-                  price={5.99}
-                  text={"Purchase PDF $5.99"}
+                  text={"Purchase PDF"}
                   btnStyles="btn btn-accent"
                 />
               </div>
@@ -99,19 +89,16 @@ const ProductDetails = async ({ params }) => {
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <Clock size={25} className="text-accent" />
                 <h3 className="text-lg">Fast Delivery</h3>
-                <p>Your package will be shipped the same day!</p>
-              </div>
-
-              <div className="flex gap-2 flex-col md:flex-row items-center">
-                <EyeOff size={25} className="text-accent" />
-                <h3 className="text-lg">Discreet</h3>
-                <p>We will ship your package in plain, discreet packaging.</p>
+                <p>Your PDF will be emailed the same day!</p>
               </div>
 
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <PackageCheck size={25} className="text-accent" />
                 <h3 className="text-lg">Returns</h3>
-                <p>Free returns for Canadian and US shoppers!</p>
+                <p>
+                  By purchasing, you understand that documents provided are
+                  non-refundable.
+                </p>
               </div>
 
               <div className="flex gap-2 flex-col md:flex-row items-center">

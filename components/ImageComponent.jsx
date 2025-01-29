@@ -16,6 +16,10 @@ export default function ImageComponent({ deck }) {
     }
   });
 
+  /** 
+    Todo: Image compression for lazy loading.
+  **/
+
   return (
     <div className="">
       <div className="p-5 flex flex-col lg:flex-row lg:mx-auto justify-center">

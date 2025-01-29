@@ -8,7 +8,7 @@ import CountUp from "react-countup";
 
 import { MdEmojiPeople } from "react-icons/md";
 
-import { Gauge, UserRoundPlus, Truck } from "lucide-react";
+import { Gauge, UserRoundPlus, Smartphone } from "lucide-react";
 
 const Why = () => {
   const [ref, inView] = useInView({
@@ -62,16 +62,19 @@ const Why = () => {
             <h3 className="h3"># of Decks</h3>
             <div className="text-3xl font-black mb-2">
               {inView ? (
-                <CountUp start={0} end={4} duration={6} delay={1} />
+                <CountUp start={2} end={5} duration={6} delay={1} />
               ) : null}
             </div>
             <p className="hidden xl:flex">
-              Whether you're seeking sizzling encounters, meaningful
-              conversations, or uproarious fun with friends, we've got you
-              covered. Dive into the passion of the "Hot Version," delve into
-              the depths of "Let's Get Deep," or put the spotlight on your pals
-              with "Most Likely To." Whatever your mood, Steamy Shuffle brings
-              the heat to any gathering.
+              Whether you're gearing up for a wild party or looking to spice
+              things up with your romantic partner, Steamy Shuffle has a version
+              for every vibe. Choose the energetic fun of "Party Mode" for
+              unforgettable group moments, or turn up the heat with "Couples'
+              Edition" to spark some deeper connections. If you're in the mood
+              for playful competition, "Truth or Dare" will keep things lively,
+              while "Flirty Fun" sets the stage for those intimate moments.
+              Whatever you're after, Steamy Shuffle delivers the perfect game
+              for every occasion.
             </p>
           </motion.div>
 
@@ -86,15 +89,20 @@ const Why = () => {
             <h3 className="h3">Total Buyers</h3>
             <div className="text-3xl font-black mb-2">
               {inView ? (
-                <CountUp start={3103} end={3195} duration={3} delay={1} />
+                <CountUp start={39101} end={43201} duration={3} delay={1} />
               ) : null}
               +
             </div>
             <p className="hidden xl:flex">
-              Get ready to laugh, blush, and bond with our game! <br />
-              Designed to bring joy and laughter to couples, creating
-              unforgettable memories of intimacy, happiness and love. As a new
-              business, we are so excited to see how many people love our game!
+              Join the countless others who have already discovered the fun and
+              excitement of Steamy Shuffle! Thousands of players have grabbed
+              their own copy and loved every moment, with rave reviews pouring
+              in from all corners. Whether it's a casual hangout or a special
+              night with a partner, people can't get enough of how it brings
+              everyone together, creating laughter, connection, and
+              unforgettable memories. It’s quickly becoming the go-to game for
+              every party, and the feedback is clear—once you try it, you’ll be
+              hooked too!
             </p>
           </motion.div>
 
@@ -105,8 +113,8 @@ const Why = () => {
             viewport={{ once: false, amount: 0.2 }}
             className="flex flex-col items-center text-center max-w-[160px] xl:max-w-none p-2 xl:p-0"
           >
-            <Truck size={44} className=" text-accent mb-4" />
-            <h3 className="h3">Free Shipping</h3>
+            <Smartphone size={44} className=" text-accent mb-4" />
+            <h3 className="h3">Easy Accessibility</h3>
             <div className="text-3xl font-black mb-2">
               {inView ? (
                 <CountUp start={78} end={100} duration={3} delay={1} />
@@ -114,12 +122,12 @@ const Why = () => {
               %
             </div>
             <p className="hidden xl:flex">
-              Enjoy the convenience of free shipping on all orders with Steamy
-              Shuffle. We believe that nothing should stand in the way of your
-              excitement, which is why we offer complimentary shipping to ensure
-              your decks arrive promptly and hassle-free. Sit back, relax, and
-              let the anticipation build as you await your Steamy Shuffle
-              experience to begin.
+              Stop wasting money on card decks that get ruined when drinks are
+              spilled—keep your game right on your phone and play anywhere,
+              anytime. No more worrying about soggy cards or losing pieces. With
+              a PDF version of the game, you’ve got it ready to go, and it’s
+              always in perfect condition. Just pull it up on your device and
+              enjoy the fun without the mess.
             </p>
           </motion.div>
         </div>
