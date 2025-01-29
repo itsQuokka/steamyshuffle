@@ -119,9 +119,6 @@ const ProductDetails = async ({ params }) => {
           </div>
         </div>
       </div>
-      <div className="mx-auto items-center gap-4">
-        <TestimonialSlug />
-      </div>
     </section>
   );
 };
