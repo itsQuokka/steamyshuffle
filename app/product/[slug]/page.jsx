@@ -63,14 +63,14 @@ const ProductDetails = async ({ params }) => {
               <ChevronLeft size={20} />
               Back to Decks
             </Link>
-            <div className="flex flex-col gap-6 items-start">
+            <div className="flex flex-col gap-6 items-center md:items-start">
               <div>
                 <h3>{deck.name}</h3>
-                <p className="text-lg text-accent font-semibold">
+                <p className="text-lg text-center md:text-left text-accent font-semibold">
                   ${deck.price} CAD
                 </p>
               </div>
-              <p>{deck.description}</p>
+              <p className="text-center md:text-left">{deck.description}</p>
               <div className="flex flex-col gap-3 mx-auto md:mx-0 items-left md:flex-row">
                 <AddToCartBtn
                   price_id={deck.price_id}
@@ -79,7 +79,7 @@ const ProductDetails = async ({ params }) => {
                   description={deck.description}
                   images={deck.images}
                   price={deck.price}
-                  text={"Purchase PDF"}
+                  text={"Purchase $" + deck.price}
                   btnStyles="btn btn-accent"
                 />
               </div>
@@ -90,13 +90,15 @@ const ProductDetails = async ({ params }) => {
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <Clock size={25} className="text-accent" />
                 <h3 className="text-lg">Fast Delivery</h3>
-                <p>No time to waste, your PDF will be delivered on purchase!</p>
+                <p className="text-center md:text-left">
+                  No time to waste, your PDF will be delivered on purchase!
+                </p>
               </div>
 
               <div className="flex gap-2 flex-col md:flex-row items-center">
                 <PackageCheck size={25} className="text-accent" />
                 <h3 className="text-lg">Returns</h3>
-                <p>
+                <p className="text-center md:text-left">
                   By purchasing, you understand that documents provided are
                   non-refundable.
                 </p>
@@ -115,6 +117,15 @@ const ProductDetails = async ({ params }) => {
                   Did you know Steamy Shuffle is an independent business?
                 </p>
               </div>
+            </div>
+            <div className="flex flex-row">
+              <Link
+                href="/our-decks"
+                className="flex items-center gap-2 font-semibold"
+              >
+                <ChevronLeft size={20} />
+                Explore all of our decks!
+              </Link>
             </div>
           </div>
         </div>
