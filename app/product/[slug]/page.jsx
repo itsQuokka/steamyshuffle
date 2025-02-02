@@ -82,6 +82,14 @@ const ProductDetails = async ({ params }) => {
                   text={"Purchase $" + deck.price}
                   btnStyles="btn btn-accent"
                 />
+                <Link
+                  href="/product/steamy-shuffle-the-whole-collection"
+                  className="mx-auto md:mx-0"
+                >
+                  <button className="btn btn-primary">
+                    Buy Entire Collection $14.99
+                  </button>
+                </Link>
               </div>
             </div>
             {/* INFO */}

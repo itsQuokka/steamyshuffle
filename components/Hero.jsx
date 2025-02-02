@@ -60,8 +60,13 @@ const Hero = () => {
               <Link href="/our-decks" className="mx-auto md:mx-0">
                 <button className="btn btn-primary">Shop Now</button>
               </Link>
-              <Link href="/our-decks" className="mx-auto md:mx-0">
-                <button className="btn btn-accent">Our Decks</button>
+              <Link
+                href="/product/steamy-shuffle-the-whole-collection"
+                className="mx-auto md:mx-0"
+              >
+                <button className="btn btn-accent">
+                  Limited Time Bundle $14.99
+                </button>
               </Link>
             </motion.div>
           </div>
